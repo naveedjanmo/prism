@@ -143,17 +143,17 @@ const Box = function () {
           cy.rotation.set(0, (2 * Math.PI / 3) * ca * r + (i * 0.2), 0)
         })
 
-        boxGroup.position.set(0, -20 + 20 * easing(capBr), 0)
+        // boxGroup.position.set(0, -20 + 20 * easing(capBr), 0)
         boxGroup.rotation.set(-0.2 * Math.sin(br * 6.5), 0.2 * Math.sin(br * 5.5), 0)
 
-        raycaster.setFromCamera( mouse, camera )
-        const intersects = raycaster.intersectObjects([box])
+        // raycaster.setFromCamera( mouse, camera )
+        // const intersects = raycaster.intersectObjects([box])
 
-        if (intersects.length > 0) {
-          signTag.current.classList.add("show")
-        } else {
-          signTag.current.classList.remove("show")
-        }
+        // if (intersects.length > 0) {
+        //   signTag.current.classList.add("show")
+        // } else {
+        //   signTag.current.classList.remove("show")
+        // }
 
         renderer.render(scene, camera)
 

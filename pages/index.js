@@ -90,7 +90,7 @@ export default function Home() {
     
         const json = await r.json()
 
-        // window.location.href = json.url
+        window.location.href = json.url
       } catch (e) {
         alert("incorrect download url")
       }
